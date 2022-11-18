@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.face{
+    width: 230px;
+    height: 230px;
+    background-color:rgba(255,0,255,0.3);
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    position: relative;
+    /* overflow: hidden; */
+
+}
+.eyeleft{
+    width: 25px;
+    height: 50px;
+    left: 62px;
+    top: 45px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.eyeright{
+    width: 25px;
+    height: 50px;
+    left: 145px;
+    top: 45px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.eyeleft .lens{
+    width: 10px;
+    height: 20px;
+    background-color: black;
+    border: 1px solid black;
+    left:7px;
+    top: 27px;
+    position: absolute;
+    border-radius: 50%;
+}
+.eyeright .lens{
+    width: 10px;
+    height: 20px;
+    background-color: black;
+    border: 1px solid black;
+    left:7px;
+    top: 27px;
+    position: absolute;
+    border-radius: 50%;
+}
+.eyebrosleft{
+    width: 40px;
+    height: 10px;
+    position: absolute;
+    left: 55px;
+    top: 33px;
+    border-top: 2px solid black;
+    border-radius: 50%;
+}
+ 
+.eyebrosright{
+    width: 40px;
+    height: 10px;
+    position: absolute;
+    left: 140px;
+    top: 33px;
+    border-top: 2px solid black;
+    border-radius: 50%;
+}
+.nose{
+    width: 9px;
+    height: 40px;
+    top: 100px;
+    left: 107px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+.mouth{
+    width: 75px;
+    height: 35px;
+    position: absolute;
+    border-bottom: 2px solid black;
+    left: 75px;
+    top: 150px;
+    border-radius: 50%;
+}
+
+@keyframes round {
+    0%{left: 0; transform: rotate(0);}
+    50%{left:calc(100% - 230px); transform: rotate(360deg); }
+    100%{left: 0;transform: rotate(0); }
+}
+.eyeleft{
+    animation:full 0.5s 7s;
+}
+.face{
+    animation: round 6s 1s;
+}
+@keyframes full {
+    0%{height:50px; top: 45px;}
+    50%{height: 0; top: 67.5px;}
+    100%{height: 50px; top: 45px;}
+}
+
+@keyframes bros {
+    0%{height:10px; top:33px;}
+    50%{height: 0; top:49.5px ;}
+    100%{height: 10px; top: 33px;}
+}
+.eyebrosleft{
+    animation:bros 0.5s 7s;
+}
+
+@keyframes mouth {
+    0%{height: 35px;  top:150px;}
+    50%{height: 0; top: 180px;}
+    100%{height: 35px; top:150px;}
+}
+.mouth{
+    animation: mouth 1s 7s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .face2{
+    width: 230px;
+    height: 230px;
+    position: relative;
+    border-radius: 50%;
+    background-color: aqua;
+    top: 20px;
+}
+.eyeleft1{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 50%;
+    top:50px;
+    left: 55px;
+    background-color: #fff;
+}
+.eyebrosright1{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 50%;
+    top:50px;
+    left: 140px;
+    background-color: #fff;
+}
+.eyeleft1 .lens1{
+    width:14px;
+    height: 20px;
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 25px;
+    left:6px;
+    background-color: #000;
+}
+.eyeright1 .lens1{
+    width:14px;
+    height: 20px;
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 80px;
+    left: 150px;
+    background-color: #000;
+} */
